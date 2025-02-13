@@ -1,0 +1,25 @@
+#!/bin/bash
+# This is the bash script part of the .securlybypass file
+
+# Create a temporary directory
+TEMP_DIR=$(mktemp -d)
+
+# Extract the HTML content to a temporary HTML file
+cat << 'EOF' > $TEMP_DIR/index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securly Bypass File</title>
+</head>
+<body>
+    <h1>This is a test template.</h1>
+    <p>Feel free to use this template, but credit is required for any personal projects, unless u are contributing to this repo :)</p>
+</body>
+</html>
+EOF
+
+# Serve the HTML file using Python's HTTP server
+python3 -m http.server --directory $TEMP_DIR 8000
+echo "file opened"
