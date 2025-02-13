@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securly Bypass Viewer</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        pre {
+            background-color: #1e1e1e;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px;
+            margin: 20px;
+            text-align: left;
+            max-height: 50vh;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Securly Bypass Viewer</h1>
+        <input type="file" id="fileInput" accept=".securlybypass">
+        <button id="viewButton" onclick="viewFile()">View File</button>
+        <pre id="fileContent"></pre>
+    </div>
+    <script>
+        function viewFile() {
+            const fileInput = document.getElementById('fileInput');
+            const file = fileInput.files[0];
+            const fileContent = document.getElementById('fileContent');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const content = e.target.result;
+                    fileContent.textContent = content;
+                };
+                reader.readAsText(file);
+            } else {
+                fileContent.textContent = 'No file selected';
+            }
+        }
+    </script>
+</body>
+</html>
