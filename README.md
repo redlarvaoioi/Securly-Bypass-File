@@ -11,7 +11,8 @@ Then, run ./run.sh
 This will run the .securlybypass file. 
 
 # Later Updates
-i might make this so that it works on the computer, that way you wont need to make a codespace everytime.
+1. i might make this so that it works on the computer, that way you wont need to make a codespace everytime.
+2. add a proxy using pyhton to the file to attempt to make it kind of undetectable
 
 # Things To note
 
