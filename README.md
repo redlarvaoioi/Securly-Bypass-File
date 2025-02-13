@@ -17,3 +17,9 @@ This will run the .securlybypass file.
 # Things To note
 
 the launcher i made is very ugly, i didnt really have to much time to work on it, updates would be appreciated!!!
+
+
+
+also u can use the GO proxy to bypass securly, any link works, have fun!!!!!!!
+
+also please leave a star ; u see, its good for ego LOL
