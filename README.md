@@ -12,3 +12,7 @@ This will run the .securlybypass file.
 
 # Later Updates
 i might make this so that it works on the computer, that way you wont need to make a codespace everytime.
+
+# Things To note
+
+the launcher i made is very ugly, i didnt really have to much time to work on it, updates would be appreciated!!!
