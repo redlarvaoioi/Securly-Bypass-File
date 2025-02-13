@@ -1,0 +1,70 @@
+#!/bin/bash
+# This is the bash script part of the .securlybypass file
+
+# Create a temporary directory
+TEMP_DIR=$(mktemp -d)
+
+# Copy the existing HTML files to the temporary directory
+cp discord.html $TEMP_DIR/
+cp mc.html $TEMP_DIR/
+
+# Extract the launcher HTML content to a temporary HTML file
+cat << 'EOF' > $TEMP_DIR/launcher.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Securly Bypass Launcher</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        .btn {
+            background-color: #1e1e1e;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Securly Bypass Launcher</h1>
+        <button class="btn" onclick="launch('discord.html')">Discord</button>
+        <button class="btn" onclick="launch('mc.html')">Eaglercraft</button>
+    </div>
+    <script>
+        function launch(file) {
+            fetch(file)
+                .then(response => response.text())
+                .then(data => {
+                    const blob = new Blob([data], { type: 'text/html' });
+                    const url = URL.createObjectURL(blob);
+                    window.open(url, '_blank');
+                })
+                .catch(error => console.error('Error loading file:', error));
+        }
+    </script>
+</body>
+</html>
+EOF
+
+# Serve the launcher HTML file using Python's HTTP server
+python3 -m http.server --directory $TEMP_DIR 8000
