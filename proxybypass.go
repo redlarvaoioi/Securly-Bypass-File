@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 	"net/url"
+	"strings"
 )
 
 func main() {
@@ -47,6 +48,20 @@ func handleProxy(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	w.WriteHeader(response.StatusCode)
-	io.Copy(w, response.Body)
+	if response.Header.Get("Content-Type") == "text/html" {
+		bodyBytes, err := io.ReadAll(response.Body)
+		if err != nil {
+			http.Error(w, "Failed to read response body", http.StatusInternalServerError)
+			return
+		}
+
+		bodyString := string(bodyBytes)
+		replacedBody := strings.ReplaceAll(bodyString, `href="`, `href="/?url=`)
+		replacedBody = strings.ReplaceAll(replacedBody, `src="`, `src="/?url=`)
+		replacedBody = strings.ReplaceAll(replacedBody, `action="`, `action="/?url=`)
+		w.Write([]byte(replacedBody))
+	} else {
+		w.WriteHeader(response.StatusCode)
+		io.Copy(w, response.Body)
+	}
 }
