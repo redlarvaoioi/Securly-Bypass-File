@@ -1,4 +1,4 @@
-Custom Code License v1.0
+SIGMA Code License v1.0
 This license governs the usage, distribution, and modification of the code in this repository. By accessing, using, or contributing to this code, you agree to abide by the terms set forth below. Any violation of these terms may result in legal action, including but not limited to copyright infringement claims.
 
 1. Ownership and Rights
@@ -25,7 +25,7 @@ This code may not be used for commercial purposes, including but not limited to:
 Selling, licensing, or otherwise monetizing any portion of the code.
 Integrating the code into proprietary software, paid services, or closed-source projects.
 Using the code in any manner that generates financial gain, directly or indirectly.
-Exceptions to this rule may be granted only with explicit, written permission from the Author. Unauthorized commercial use will be considered a direct violation of this license and may result in legal consequences.
+Exceptions to this rule may be granted only with explicit, written permission from the Author. Unauthorized commercial use will be considered a direct violation of this license and may result in legal consequences. If permission is granted for Commercial use, however, the project must be open source.
 
 6. Attribution Requirements
 For any permitted use of this code, proper attribution is mandatory. Proper attribution includes:
@@ -43,5 +43,8 @@ Issuing formal takedown requests under the Digital Millennium Copyright Act (DMC
 Seeking legal action for damages resulting from unauthorized use.
 8. Agreement to Terms
 By accessing, using, or contributing to this project, you automatically agree to be bound by the terms of this license. If you do not agree, you must immediately cease all use of this code and delete any copies in your possession.
+
+9. Distribution of License
+You are allowed to distribute and use this LIcense in your own works as long as proper attribution to Author is clearly stated. You can use this License to license your own code. Modifications of this License are strictly prohibited. Any modifications that are made can be met with consequences, including but not limited to, copyright infringement.
 
 This license is non-transferable, and the Author reserves the right to update or modify these terms at any time. Continued use of the code after modifications constitutes acceptance of the updated terms.
