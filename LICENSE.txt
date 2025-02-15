@@ -1,1 +1,47 @@
+Custom Code License v1.0
+This license governs the usage, distribution, and modification of the code in this repository. By accessing, using, or contributing to this code, you agree to abide by the terms set forth below. Any violation of these terms may result in legal action, including but not limited to copyright infringement claims.
 
+1. Ownership and Rights
+All rights to the code in this repository remain exclusively with the original author ("Author"). No individual or entity may claim ownership of any portion of this work, whether in part or in whole, without explicit, written permission from the Author. Any attempt to do so is a direct violation of this license and applicable copyright laws.
+
+2. Usage Restrictions
+No person, organization, or entity is permitted to use, copy, distribute, or modify this code without the explicit, written permission of the Author. The code may only be used in ways that fully comply with this license. Unauthorized use in any form is strictly prohibited.
+
+3. Contributions
+Contributions to this project are welcome, but by submitting any code, suggestions, or modifications, you agree that:
+
+Your contributions will be incorporated into the project at the sole discretion of the Author.
+You will receive proper attribution for accepted contributions.
+You retain ownership of your contributions but grant the Author an irrevocable, non-exclusive license to use them in this project.
+You may not withdraw or revoke the usage rights of accepted contributions once merged into the project.
+4. Forking and Derivative Works
+Forking or creating derivative works from this code is strictly prohibited unless explicit, written permission is granted by the Author. Any granted permission must be documented and verifiable.
+
+If permission is granted, proper attribution must be given, including a clear statement crediting the original Author.
+Unauthorized forking or the creation of derivative works may result in legal action, including copyright infringement claims filed against your account, website, or repository.
+5. Commercial Use
+This code may not be used for commercial purposes, including but not limited to:
+
+Selling, licensing, or otherwise monetizing any portion of the code.
+Integrating the code into proprietary software, paid services, or closed-source projects.
+Using the code in any manner that generates financial gain, directly or indirectly.
+Exceptions to this rule may be granted only with explicit, written permission from the Author. Unauthorized commercial use will be considered a direct violation of this license and may result in legal consequences.
+
+6. Attribution Requirements
+For any permitted use of this code, proper attribution is mandatory. Proper attribution includes:
+
+A visible and unmodified reference to the original Author.
+A clear indication of any modifications made, if applicable.
+A direct link to the original repository or source.
+Failure to provide proper attribution when required constitutes a breach of this license and may result in enforcement actions.
+
+7. Copyright Enforcement
+Any unauthorized use, distribution, forking, modification, or commercial exploitation of this code will be considered copyright infringement. The Author reserves the right to pursue any and all legal remedies, including:
+
+Filing copyright infringement reports with hosting platforms (e.g., GitHub, GitLab, Bitbucket).
+Issuing formal takedown requests under the Digital Millennium Copyright Act (DMCA) or other relevant laws.
+Seeking legal action for damages resulting from unauthorized use.
+8. Agreement to Terms
+By accessing, using, or contributing to this project, you automatically agree to be bound by the terms of this license. If you do not agree, you must immediately cease all use of this code and delete any copies in your possession.
+
+This license is non-transferable, and the Author reserves the right to update or modify these terms at any time. Continued use of the code after modifications constitutes acceptance of the updated terms.
