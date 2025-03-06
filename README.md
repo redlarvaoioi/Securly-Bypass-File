@@ -5,7 +5,7 @@ A simple file extension called .securlybypass that can be opened in any GitHub C
 create a codespace in this repo
 then, in the terminal run 
 ```
-chmod+x run.sh
+chmod +x run.sh
 ```
 Then, run 
 ```
