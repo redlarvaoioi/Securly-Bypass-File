@@ -59,6 +59,10 @@ source ~/.bashrc
    ```
    go run proxybypass.go
    ```
-
+# Now, you should see (in the bottom right corner) something like ....Port 8000.. 
+# Click on the ports tab. You should then see a port. Open it in your browser. It should say  "URL" parameter not found (or something like that)
+# At the end of the URL (in the search bar) add /?url=   Next, after the equal sign, put any URL you want, but it must begin with https://
+# Hit enter and watch the magic happen!
+ 
 
 
